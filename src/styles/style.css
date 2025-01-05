@@ -46,7 +46,7 @@ main .img-product{
 
 /* Ao clicar em um produto ele fica selecionado como se fosse para adicionar ao carrinho. Se clicar novamente ele é desmarcado */
 
-main .conteudo-pagina .card-produto .nome-produto{
+main .conte  udo-pagina .card-produto .nome-produto{
     font-weight: 500;
     margin-bottom: 6px;
     margin-top: 10px;
