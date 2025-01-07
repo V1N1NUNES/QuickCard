@@ -1,108 +1,108 @@
 /* /Css reset/ */
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-body{
-    background-color: antiquewhite;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 0px 20px;
-}
-
-header .header{
-    background-color: azure;
-    width: 100%;
-    padding: 15px;
-    border-radius: 20px;
-    margin-bottom: 20px;
-}
-header .header .titulo{
-    margin-bottom: 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 7px
+body {
+  background-color: antiquewhite;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0px 20px;
 }
 
-main .conteudo-pagina{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
+header .header {
+  background-color: azure;
+  width: 100%;
+  padding: 15px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+header .header .titulo {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
 }
 
-main .linha{
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
-    max-width: 80%;
-}
-main .img-product{
-    max-height: 150px;
-    max-width: 100px;
-    border-radius: 20px;
+main .conteudo-pagina {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
 }
 
-main .conteudo-pagina .card-produto{
-    cursor: pointer;
-    transition: 0.3s ease;
-    margin-bottom: 10px;
+main .linha {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  max-width: 80%;
 }
-main .card-produto:hover{
-    transform: scale(1.04);
-}
-main .produto-selecionado{
-    border: 3px solid rgb(123, 252, 123);
-}
-main .conte  udo-pagina .card-produto .nome-produto{
-    font-weight: 500;
-    margin-bottom: 6px;
-    margin-top: 10px;
-}
-main .conteudo-pagina .card-produto{
-    background-color: rgb(201, 201, 201);
-    border-radius: 20px;
-    padding :15px;
-    width: 380px;
-    display: flex;
-    flex-direction: column;
-}
-footer .rodape{
-    background-color: azure;
-    width: 100%;
-    padding: 15px;
-    border-radius: 20px;
-    margin-top: 60px;
-    display: flex;
-    justify-content: space-around;
+main .img-product {
+  max-height: 150px;
+  max-width: 100px;
+  border-radius: 20px;
 }
 
-footer .botao{
-    background-color: aliceblue;
-    border: none;
-    color: inherit;
-    cursor: pointer;
-    font-size: 20px;
-    border-radius: 20px;
-    padding: 5px;
-    transition: 0.3s ease;
+main .conteudo-pagina .card-produto {
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-bottom: 10px;
 }
-footer .botao:hover{
-      transform: scale(1.1);
-      color: rgb(163, 163, 163);
+main .card-produto:hover {
+  transform: scale(1.04);
 }
-footer #add:hover{
-    background-color: rgb(123, 252, 123);
+main .produto-selecionado {
+  border: 3px solid rgb(123, 252, 123);
 }
-footer #edit:hover{
-    background-color: powderblue;
+main .conte udo-pagina .card-produto .nome-produto {
+  font-weight: 500;
+  margin-bottom: 6px;
+  margin-top: 10px;
 }
-footer #remove:hover{
-    background-color: rgb(255, 96, 96);
+main .conteudo-pagina .card-produto {
+  background-color: azure;
+  border-radius: 20px;
+  padding: 15px;
+  width: 380px;
+  display: flex;
+  flex-direction: column;
 }
-footer #buy:hover{
-    background-color: rgb(105, 105, 255);
+footer .rodape {
+  background-color: azure;
+  width: 100%;
+  padding: 15px;
+  border-radius: 20px;
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer .botao {
+  background-color: aliceblue;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 5px;
+  transition: 0.3s ease;
+}
+footer .botao:hover {
+  transform: scale(1.1);
+  color: rgb(163, 163, 163);
+}
+footer #add:hover {
+  background-color: rgb(123, 252, 123);
+}
+footer #edit:hover {
+  background-color: powderblue;
+}
+footer #remove:hover {
+  background-color: rgb(255, 96, 96);
+}
+footer #buy:hover {
+  background-color: rgb(105, 105, 255);
 }
 
 /* footer .modal-content{
@@ -120,26 +120,34 @@ footer .modal-content .butoes-resposta{
     justify-content: right;
 } */
 
-.modal { 
-    display: none; /* Esconde o modal por padrão */ 
-    position: fixed; /* Fixa na tela */ 
-    z-index: 1; /* Garante que fique acima de outros elementos */ 
-    left: 0; 
-    top: 0; 
-    width: 100%; /* Ocupa toda a largura da tela */ 
-    height: 100%; /* Ocupa toda a altura da tela */ 
-    overflow: auto; /* Permite rolar se o conteúdo for grande */ 
-    background-color: rgba(0,0,0,0.4); /* Fundo escuro semi-transparente */ } .modal-content { 
-        background-color: #fefefe; /* Fundo branco */ 
-        margin: 15% auto; /* Centraliza verticalmente */ 
-        padding: 20px; /* Espaçamento interno */ 
-        border: 1px solid #888; /* Borda cinza */ 
-        width: 80%; /* Largura de 80% da tela */ 
-        max-width: 600px; /* Largura máxima */ } .close { 
-            color: #aaa; /* Cor cinza para o botão de fechar */ 
-            float: right; /* Posiciona à direita */ 
-            font-size: 28px; /* Tamanho da fonte */ 
-            font-weight: bold; /* Negrito */ 
-            cursor: pointer; /* Muda o cursor para pointer (mão) */ } .close:hover, .close:focus { 
-                color: black; /* Muda a cor ao passar o mouse */ 
-                text-decoration: none; /* Remove sublinhado */}
+.modal {
+  display: none; /* Esconde o modal por padrão */
+  position: fixed; /* Fixa na tela */
+  z-index: 1; /* Garante que fique acima de outros elementos */
+  left: 0;
+  top: 0;
+  width: 100%; /* Ocupa toda a largura da tela */
+  height: 100%; /* Ocupa toda a altura da tela */
+  overflow: auto; /* Permite rolar se o conteúdo for grande */
+  background-color: rgba(0, 0, 0, 0.4); /* Fundo escuro semi-transparente */
+}
+.modal-content {
+  background-color: #fefefe; /* Fundo branco */
+  margin: 15% auto; /* Centraliza verticalmente */
+  padding: 20px; /* Espaçamento interno */
+  border: 1px solid #888; /* Borda cinza */
+  width: 80%; /* Largura de 80% da tela */
+  max-width: 600px; /* Largura máxima */
+}
+.close {
+  color: #aaa; /* Cor cinza para o botão de fechar */
+  float: right; /* Posiciona à direita */
+  font-size: 28px; /* Tamanho da fonte */
+  font-weight: bold; /* Negrito */
+  cursor: pointer; /* Muda o cursor para pointer (mão) */
+}
+.close:hover,
+.close:focus {
+  color: black; /* Muda a cor ao passar o mouse */
+  text-decoration: none; /* Remove sublinhado */
+}
